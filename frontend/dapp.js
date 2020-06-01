@@ -59,7 +59,7 @@ const dApp = {
     $("#dapp-tokens").html("");
     this.tokens.forEach((token) => {
       try {
-        let endAuction = `<a id="${token.tokenId}" class="dapp-admin" style="display:none;" href="https://ninoslavvasic.github.io/martian_market/" onclick="dApp.endAuction(event)">End Auction</a>`;
+        let endAuction = `<a id="${token.tokenId}" class="dapp-admin" style="display:none;" href="#" onclick="dApp.endAuction(event)">End Auction</a>`;
         let bid = `<a id="${token.tokenId}" href="#" onclick="dApp.bid(event);">Bid</a>`;
         let owner = `Owner: ${token.owner}`;
         let withdraw = `<a id="${token.tokenId}" href="#" onclick="dApp.withdraw(event)">Withdraw</a>`
